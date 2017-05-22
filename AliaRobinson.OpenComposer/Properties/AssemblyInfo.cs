@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OpenComposer")]
+[assembly: AssemblyTitle("AliaRobinson.OpenComposer")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OpenComposer")]
+[assembly: AssemblyProduct("AliaRobinson.OpenComposer")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("F2D2E923-F2D2-4BE3-BF99-06292C5D456D")]
+[assembly: Guid("3E0AD919-7050-4168-B2AD-D3EB3ADD8270")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -1,0 +1,7 @@
+C:\Users\robinsat\Documents\Projects\OpenComposer\UsageExample\bin\Debug\UsageExample.exe
+C:\Users\robinsat\Documents\Projects\OpenComposer\UsageExample\bin\Debug\UsageExample.pdb
+C:\Users\robinsat\Documents\Projects\OpenComposer\UsageExample\bin\Debug\AliaRobinson.OpenComposer.dll
+C:\Users\robinsat\Documents\Projects\OpenComposer\UsageExample\bin\Debug\AliaRobinson.OpenComposer.pdb
+C:\Users\robinsat\Documents\Projects\OpenComposer\UsageExample\obj\Debug\UsageExample.csprojResolveAssemblyReference.cache
+C:\Users\robinsat\Documents\Projects\OpenComposer\UsageExample\obj\Debug\UsageExample.exe
+C:\Users\robinsat\Documents\Projects\OpenComposer\UsageExample\obj\Debug\UsageExample.pdb
