@@ -1,6 +1,8 @@
+using System;
+
 namespace AliaRobinson.OpenComposer.Notes
 {
-    public interface IPitch
+    public interface IPitch : IComparable<IPitch>
     {
         
         PitchClass GetPitchClass();
@@ -8,6 +10,8 @@ namespace AliaRobinson.OpenComposer.Notes
         int GetOctave();
 
         double GetFrequency();
+
+        IPitch GetPitchAbove(int numHalfSteps);
 
     }
 }

@@ -1,0 +1,9 @@
+C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposerTest\bin\Debug\AliaRobinson.OpenComposerTest.dll
+C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposerTest\bin\Debug\AliaRobinson.OpenComposerTest.pdb
+C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposerTest\bin\Debug\AliaRobinson.OpenComposer.dll
+C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposerTest\bin\Debug\nunit.framework.dll
+C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposerTest\bin\Debug\AliaRobinson.OpenComposer.pdb
+C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposerTest\bin\Debug\nunit.framework.xml
+C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposerTest\obj\Debug\AliaRobinson.OpenComposerTest.csprojResolveAssemblyReference.cache
+C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposerTest\obj\Debug\AliaRobinson.OpenComposerTest.dll
+C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposerTest\obj\Debug\AliaRobinson.OpenComposerTest.pdb

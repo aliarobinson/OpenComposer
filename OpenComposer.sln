@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliaRobinson.OpenComposer",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsageExample", "UsageExample\UsageExample.csproj", "{9D66400A-E6A1-4907-9388-DD3B3B8D091D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AliaRobinson.OpenComposerTest", "AliaRobinson.OpenComposerTest\AliaRobinson.OpenComposerTest.csproj", "{FDC87495-4999-4AFE-94C7-8EE571BFD651}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9D66400A-E6A1-4907-9388-DD3B3B8D091D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D66400A-E6A1-4907-9388-DD3B3B8D091D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D66400A-E6A1-4907-9388-DD3B3B8D091D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDC87495-4999-4AFE-94C7-8EE571BFD651}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC87495-4999-4AFE-94C7-8EE571BFD651}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC87495-4999-4AFE-94C7-8EE571BFD651}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC87495-4999-4AFE-94C7-8EE571BFD651}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

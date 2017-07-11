@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using AliaRobinson.OpenComposer.Instruments;
 using AliaRobinson.OpenComposer.Notes;
 
 namespace AliaRobinson.OpenComposer.CompositionSpace
@@ -7,21 +8,33 @@ namespace AliaRobinson.OpenComposer.CompositionSpace
     public class CompositionSpace : ICompositionSpace
     {
 
-        private List<PitchClass> availablePitches;
-
+        private int maxPitches;
+        private Scale masterScale;
+        private List<IInstrument> availableInstruments;
+        
         public CompositionSpace()
         {
-            availablePitches = new List<PitchClass>();
+            availableInstruments = new List<IInstrument>();
         }
 
-        public void AddAvailablePitch(PitchClass pc)
+        public void AddAvailableInstrument(IInstrument instrument)
         {
-            availablePitches.Add(pc);
+            availableInstruments.Add(instrument);
         }
-        
-        public List<PitchClass> GetAvailablePitches()
+
+        public int GetMaxPitches()
         {
-            return availablePitches;
+            return maxPitches;
+        }
+
+        public Scale GetMasterScale()
+        {
+            return masterScale;
+        }
+
+        public List<IInstrument> GetAvailableInstruments()
+        {
+            return availableInstruments;
         }
         
     }

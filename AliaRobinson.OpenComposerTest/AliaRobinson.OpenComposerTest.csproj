@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E0AD919-7050-4168-B2AD-D3EB3ADD8270}</ProjectGuid>
+    <ProjectGuid>{FDC87495-4999-4AFE-94C7-8EE571BFD651}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AliaRobinson.OpenComposer</RootNamespace>
-    <AssemblyName>AliaRobinson.OpenComposer</AssemblyName>
+    <RootNamespace>AliaRobinson.OpenComposerTest</RootNamespace>
+    <AssemblyName>AliaRobinson.OpenComposerTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -33,37 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MusicXml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\packages\MusicXml.NET.2.0.0.0\lib\net35\MusicXml.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
+      <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompositionSpace\CompositionSpace.cs" />
-    <Compile Include="CompositionSpace\Defaults.cs" />
-    <Compile Include="CompositionSpace\ICompositionSpace.cs" />
-    <Compile Include="CompositionSpace\IInstrument.cs" />
-    <Compile Include="CompositionSpace\Instrument.cs" />
-    <Compile Include="CompositionSpace\IScale.cs" />
-    <Compile Include="CompositionSpace\Scale.cs" />
-    <Compile Include="Notes\INote.cs" />
-    <Compile Include="Notes\IPitch.cs" />
-    <Compile Include="Notes\Note.cs" />
-    <Compile Include="Notes\Pitch.cs" />
-    <Compile Include="Notes\PitchClass.cs" />
+    <Compile Include="CompositionSpace\ScaleTest.cs" />
+    <Compile Include="Notes\PitchTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tracks\EmptyTrack.cs" />
-    <Compile Include="Tracks\ITimeSignature.cs" />
-    <Compile Include="Tracks\ITrack.cs" />
-    <Compile Include="Tracks\ITrackSynchronizer.cs" />
-    <Compile Include="Tracks\TrackSet.cs" />
-    <Compile Include="Tracks\TrackSynchronizer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\AliaRobinson.OpenComposer\AliaRobinson.OpenComposer.csproj">
+      <Project>{3e0ad919-7050-4168-b2ad-d3eb3add8270}</Project>
+      <Name>AliaRobinson.OpenComposer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

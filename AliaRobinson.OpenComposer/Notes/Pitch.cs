@@ -4,30 +4,64 @@ namespace AliaRobinson.OpenComposer.Notes
 {
     public class Pitch : IPitch
     {
-        private PitchClass pitchClass;
-        private int octave;
+        private readonly PitchClass pitchClass;
+        private readonly int octave;
 
-        public Pitch(PitchClass pc, int octave)
+        public Pitch(PitchClass pitchClass, int octave)
         {
-            this.pitchClass = pc;
+            this.pitchClass = pitchClass;
             this.octave = octave;
         }
         
         public PitchClass GetPitchClass()
         {
-            return this.pitchClass;
+            return pitchClass;
         }
 
         public int GetOctave()
         {
-            return this.octave;
+            return octave;
         }
 
         public double GetFrequency()
         {
-            int exponent = octave + 1;
-            double baseFrequency = PitchClasses.BaseFrequency(pitchClass);
-            return Math.Pow(2, exponent) * baseFrequency;
+            return Math.Pow(2, octave + 1) * pitchClass.GetBaseFrequency();
+        }
+
+        public IPitch GetPitchAbove(int numHalfSteps)
+        {
+            var newPitchId = pitchClass.GetId() + numHalfSteps;
+            var newOctave = octave;
+            if (newPitchId >= PitchClasses.NumPitchClasses)
+            {
+                newPitchId -= PitchClasses.NumPitchClasses;
+                newOctave++;
+            } else if (newPitchId < 0)
+            {
+                newPitchId += PitchClasses.NumPitchClasses;
+                newOctave--;
+            }
+            return new Pitch(PitchClasses.GetPitchClass(newPitchId), newOctave);
+        }
+
+        public int CompareTo(IPitch other)
+        {
+            return GetHashCode() - other.GetHashCode();
+        }
+
+        public override bool Equals(object o)
+        {
+            if (o == null)
+                return false;
+            IPitch p = o as IPitch;
+            if (p == null)
+                return false;
+            return p.GetOctave() == this.GetOctave() && p.GetPitchClass().Equals(this.pitchClass);
+        }
+
+        public override int GetHashCode()
+        {
+            return octave * PitchClasses.NumPitchClasses + pitchClass.GetId();
         }
     }
 }
