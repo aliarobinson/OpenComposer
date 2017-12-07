@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="AliaRobinson.OpenComposer\AliaRobinson.OpenComposer.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AliaRobinson.OpenComposer\CompositionSpace\CompositionSpace.cs">
+    <Files>
+      <File FileName="AliaRobinson.OpenComposer\CompositionSpace\CompositionSpace.cs" Line="8" Column="52" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

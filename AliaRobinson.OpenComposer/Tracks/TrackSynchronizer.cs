@@ -17,8 +17,9 @@ namespace AliaRobinson.OpenComposer.Tracks
         
         private const int SmallestBeatDivision = 8;
 
-        public TrackSynchronizer()
+        public TrackSynchronizer(Timer timer)
         {
+            this.timer = timer;
             trackSet = new TrackSet();
             isPlaying = false;
             SetBpm(60);
@@ -28,9 +29,8 @@ namespace AliaRobinson.OpenComposer.Tracks
         {
             beatCounter = 0;
             isPlaying = true;
-            timer = new Timer();
-            timer.Elapsed += new ElapsedEventHandler(ShortestBeat);
             timer.Interval = smallestBeatInterval;
+            //timer.Elapsed += ShortestBeat();
             timer.Start();
         }
 
@@ -72,7 +72,7 @@ namespace AliaRobinson.OpenComposer.Tracks
             smallestBeatInterval = (1.0 / beatsPerMillisecond) / SmallestBeatDivision;
         }
 
-        void ShortestBeat(object obj, ElapsedEventArgs args)
+        void ShortestBeat()
         {
                        
             if (++beatCounter >= SmallestBeatDivision)

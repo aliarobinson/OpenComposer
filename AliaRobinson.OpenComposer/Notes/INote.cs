@@ -1,3 +1,5 @@
+using AliaRobinson.OpenComposer.Tracks;
+
 namespace AliaRobinson.OpenComposer.Notes
 {
     public interface INote

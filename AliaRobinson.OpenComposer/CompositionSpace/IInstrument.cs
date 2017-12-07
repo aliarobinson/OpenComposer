@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using AliaRobinson.OpenComposer.Notes;
+using AliaRobinson.OpenComposer.Utils;
 
 namespace AliaRobinson.OpenComposer.Instruments
 {
-    public interface IInstrument
+    public interface IInstrument : INamed
     {
         String GetName();
 

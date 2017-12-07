@@ -1,7 +1,9 @@
 
+using AliaRobinson.OpenComposer.Utils;
+
 namespace AliaRobinson.OpenComposer.Notes
 {
-    public class PitchClass
+    public class PitchClass : INamed
     {
         // For simplicity, consider equivalent pitch classes to be the same pitch class
         // i.e. one pitch class represents either C sharp or D flat

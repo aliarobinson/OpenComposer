@@ -6,6 +6,7 @@ namespace AliaRobinson.OpenComposer.CompositionSpace
 {
     public class Scale : IScale
     {
+        private string scaleName;
         private int[] prioritizedIntervals;
         
         public Scale(int[] prioritizedIntervals)
@@ -30,6 +31,16 @@ namespace AliaRobinson.OpenComposer.CompositionSpace
             }
             pitches.Sort();
             return pitches;
+        }
+
+        public void SetName(string name)
+        {
+            this.scaleName = name;
+        }
+
+        public string GetName()
+        {
+            return scaleName ?? "Custom";
         }
     }
 

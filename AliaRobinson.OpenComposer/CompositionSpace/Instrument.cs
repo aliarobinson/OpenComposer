@@ -52,5 +52,6 @@ namespace AliaRobinson.OpenComposer.Instruments
         {
             this.upperBound = upperBound;
         }
+
     }
 }

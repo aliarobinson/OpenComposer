@@ -32,11 +32,12 @@ namespace AliaRobinson.OpenComposer.Notes
         {
             var newPitchId = pitchClass.GetId() + numHalfSteps;
             var newOctave = octave;
-            if (newPitchId >= PitchClasses.NumPitchClasses)
+            while (newPitchId >= PitchClasses.NumPitchClasses)
             {
                 newPitchId -= PitchClasses.NumPitchClasses;
                 newOctave++;
-            } else if (newPitchId < 0)
+            } 
+            while (newPitchId < 0)
             {
                 newPitchId += PitchClasses.NumPitchClasses;
                 newOctave--;

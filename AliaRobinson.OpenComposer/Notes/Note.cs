@@ -18,12 +18,12 @@ namespace AliaRobinson.OpenComposer.Notes
         
         public IPitch GetPitch()
         {
-            throw new System.NotImplementedException();
+            return this.pitch;
         }
 
         public double GetDuration()
         {
-            throw new System.NotImplementedException();
+            return this.duration;
         }
     }
 }

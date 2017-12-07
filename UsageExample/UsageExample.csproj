@@ -45,7 +45,10 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SimpleGUI.cs" />
+    <Compile Include="RecurringBeatTimer.cs" />
+    <Compile Include="SimpleGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Track.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -55,7 +58,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Samples" />
+    <Folder Include="Samples\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

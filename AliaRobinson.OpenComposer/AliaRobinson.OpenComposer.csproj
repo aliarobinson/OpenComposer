@@ -5,12 +5,11 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3E0AD919-7050-4168-B2AD-D3EB3ADD8270}</ProjectGuid>
-    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AliaRobinson.OpenComposer</RootNamespace>
     <AssemblyName>AliaRobinson.OpenComposer</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -49,18 +48,30 @@
     <Compile Include="CompositionSpace\Instrument.cs" />
     <Compile Include="CompositionSpace\IScale.cs" />
     <Compile Include="CompositionSpace\Scale.cs" />
+    <Compile Include="Notes\AudioResource.cs" />
+    <Compile Include="Notes\Duration.cs" />
     <Compile Include="Notes\INote.cs" />
     <Compile Include="Notes\IPitch.cs" />
     <Compile Include="Notes\Note.cs" />
     <Compile Include="Notes\Pitch.cs" />
     <Compile Include="Notes\PitchClass.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tracks\Beat.cs" />
+    <Compile Include="Tracks\BeatTimelineEvent.cs" />
+    <Compile Include="Tracks\NoteTimelineEvent.cs" />
     <Compile Include="Tracks\EmptyTrack.cs" />
-    <Compile Include="Tracks\ITimeSignature.cs" />
+    <Compile Include="Tracks\INoteRecorder.cs" />
+    <Compile Include="Tracks\ITimelineEvent.cs" />
+    <Compile Include="Tracks\NoteRecorder.cs" />
+    <Compile Include="Tracks\Timeline.cs" />
+    <Compile Include="Tracks\TimeSignature.cs" />
     <Compile Include="Tracks\ITrack.cs" />
     <Compile Include="Tracks\ITrackSynchronizer.cs" />
+    <Compile Include="Tracks\QueueableTrack.cs" />
+    <Compile Include="Tracks\TimelineEntry.cs" />
     <Compile Include="Tracks\TrackSet.cs" />
     <Compile Include="Tracks\TrackSynchronizer.cs" />
+    <Compile Include="Utils\INamed.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

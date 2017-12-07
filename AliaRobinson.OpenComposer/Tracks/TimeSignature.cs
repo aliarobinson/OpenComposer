@@ -1,11 +1,11 @@
 namespace AliaRobinson.OpenComposer.Tracks
 {
-    public class ITimeSignature
+    public class TimeSignature
     {
         private int numBeatsPerMeasure;
         private int singleBeatNote;
 
-        public ITimeSignature(int numBeats, int singleBeat)
+        public TimeSignature(int numBeats, int singleBeat)
         {
             numBeatsPerMeasure = numBeats;
             singleBeatNote = singleBeat;

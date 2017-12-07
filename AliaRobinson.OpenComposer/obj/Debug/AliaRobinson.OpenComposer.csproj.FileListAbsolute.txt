@@ -1,6 +1,6 @@
 C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposer\bin\Debug\AliaRobinson.OpenComposer.dll
 C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposer\bin\Debug\AliaRobinson.OpenComposer.pdb
+C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposer\bin\Debug\MusicXml.dll
 C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposer\obj\Debug\AliaRobinson.OpenComposer.csprojResolveAssemblyReference.cache
 C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposer\obj\Debug\AliaRobinson.OpenComposer.dll
 C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposer\obj\Debug\AliaRobinson.OpenComposer.pdb
-C:\Users\robinsat\Documents\Projects\OpenComposer\AliaRobinson.OpenComposer\bin\Debug\MusicXml.dll
